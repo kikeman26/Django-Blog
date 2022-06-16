@@ -7,3 +7,7 @@ How to run this project.
 - Install Python, Pip and Django.
 - Install the requeirements.txt (pip install -r requirements.txt)
 - Run the server
+
+#### Authors
+
+- Hiram Rosales 
