@@ -1,5 +1,5 @@
-# CRUD-Django-blog
-Crud Application Blog with Django and Python
+# Django-blog
+CRUD Application Blog developed in Django and Python
 
 How to run this project.
 
