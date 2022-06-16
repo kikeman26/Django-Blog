@@ -1,4 +1,9 @@
 # CRUD-Django-blog
-A basic crud application for blogs made using python and django
+Crud Application Blog with Django and Python
 
-This project is a basic CRUD pplication made with django using postgresql for database, this application can register and login and logout a user and if you have email credentials it can also send you a password reset link and it can show your posts to public and let you edit the posts.
+How to run this project.
+
+1.- Clone the repo into your machine.
+2.- Install Python, Pip and Django.
+3.- Install the requeirements.txt (pip install -r requirements.txt)
+4.- Run the server
