@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='profile',
             name='intrests',
-            field=multiselectfield.db.fields.MultiSelectField(choices=[('c', 'Coding'), ('r', 'Reading'), ('b', 'Binging'), ('g', 'Gaming')], max_length=4),
+            field=multiselectfield.db.fields.MultiSelectField(choices=[('c', 'Coding'), ('r', 'Reading'), ('t', 'Trading'), ('g', 'Gaming')], max_length=4),
         ),
     ]

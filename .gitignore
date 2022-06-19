@@ -1,2 +1,2 @@
 venv/
-media/post_pics
+**/media/post_pics/

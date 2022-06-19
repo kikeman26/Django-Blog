@@ -8,16 +8,16 @@ from multiselectfield import MultiSelectField
 class Profile(models.Model):
 
     gender_choices = [('M', 'MALE'), ('F', 'FEMALE'), ('O', 'OTHER')]
-    country_choices = [('india', 'India'), ('america', 'America'), ('china', 'China')]
-    intrests_choices = [('c', 'Coding'), ('r', 'Reading'), ('b', 'Binging'), ('g', 'Gaming')]
+    country_choices = [('mexico', 'Mexico'), ('argentina', 'Argentina'), ('colombia', 'Colombia')]
+    intrests_choices = [('c', 'Coding'), ('r', 'Reading'), ('t', 'Trading'), ('g', 'Gaming')]
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = ResizedImageField(size=[300, 300], default='default_profile.jpg', upload_to='profile_pics')
     gender = models.CharField(max_length=1, choices=gender_choices, default='M')
-    country = models.CharField(max_length=7, choices=country_choices, default='india')
-    float = models.FloatField(null=True, blank=True, default=None)
+    country = models.CharField(max_length=15, choices=country_choices, default='Mexico')
+    # float = models.FloatField(null=True, blank=True, default=None)
     intrests = MultiSelectField(choices=intrests_choices, max_choices=4)
-    boolean = models.BooleanField(default=True)
+    # boolean = models.BooleanField(default=True)
 
     def __str__(self):
         return f'{self.user.username} Profile'

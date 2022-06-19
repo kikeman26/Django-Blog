@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='profile',
             name='country',
-            field=models.CharField(choices=[('india', 'India'), ('america', 'America'), ('china', 'China')], default='india', max_length=7),
+            field=models.CharField(choices=[('mexico', 'Mexico'), ('argentina', 'Argentina'), ('colombia', 'Colombia')], default='Mexico', max_length=7),
         ),
         migrations.AddField(
             model_name='profile',

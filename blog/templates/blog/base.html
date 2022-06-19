@@ -17,9 +17,9 @@
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 
     {% if title %}
-        <title>Django Blog - {{ title }}</title>
+        <title>My Blog! - {{ title }}</title>
     {% else %}
-        <title>Django Blog</title>
+        <title>My Blog!</title>
     {% endif %}
 
 </head>
@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'blog-home' %}">Django Blog</a>
+        <a class="navbar-brand" href="{% url 'blog-home' %}">My Blog!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>

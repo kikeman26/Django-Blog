@@ -25,11 +25,12 @@ class UserUpdateForm(forms.ModelForm):
 class ProfileRegisterForm(forms.ModelForm):
     gender = forms.ChoiceField(label='Gender: ',choices=Profile.gender_choices, widget=forms.RadioSelect())
     intrests = MultiSelectFormField(label = 'Intrests: ', choices=Profile.intrests_choices)
-    boolean = forms.BooleanField(widget=forms.CheckboxInput, required=False, initial=True)
-    
+    # boolean = forms.BooleanField(widget=forms.CheckboxInput, required=False, initial=True)
+
     class Meta:
         model = Profile
-        fields = ['image', 'gender', 'country', 'intrests', 'float', 'boolean']
+        # fields = ['image', 'gender', 'country', 'intrests', 'float', 'boolean']
+        fields = ['image', 'gender', 'country', 'intrests']
         exclude = ('user',)
 
     def clean_intrests(self):
@@ -46,11 +47,12 @@ class ProfileRegisterForm(forms.ModelForm):
 class ProfileUpdateForm(forms.ModelForm):
     gender = forms.ChoiceField(label='Gender: ',choices=Profile.gender_choices, widget=forms.RadioSelect())
     intrests = MultiSelectFormField(label = 'Intrests: ', choices=Profile.intrests_choices)
-    boolean = forms.BooleanField(widget=forms.CheckboxInput, required=False, initial=True)
-    
+    # boolean = forms.BooleanField(widget=forms.CheckboxInput, required=False, initial=True)
+
     class Meta:
         model = Profile
-        fields = ['image', 'gender', 'country', 'intrests', 'float', 'boolean']
+        # fields = ['image', 'gender', 'country', 'intrests', 'float', 'boolean']
+        fields = ['image', 'gender', 'country', 'intrests']
 
     def clean_intrests(self):
         intrests = self.cleaned_data['intrests']
