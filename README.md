@@ -8,6 +8,10 @@ How to run this project.
 - Install the requeirements.txt (pip install -r requirements.txt)
 - Run the server
 
+# How to use the site?
+
+https://www.youtube.com/watch?v=VwqyUXgGjvY
+
 #### Authors
 
 - Hiram Rosales 
